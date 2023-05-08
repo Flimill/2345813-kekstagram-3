@@ -53,4 +53,8 @@ function closeErrorMessageOnAnotherClick(evt){
     closeErrorMessage(evt);
   }
 }
-export { uploadErrorMessage, uploadSuccessMessage };
+const showServerError = () => {
+  document.querySelector('#server-error').style.display = 'block';
+};
+
+export { uploadErrorMessage, uploadSuccessMessage, showServerError };
